@@ -9,6 +9,8 @@
 
 #define COMMS_BAUD_RATE 2400
 
+#define PFC_ADDRESS 0x20
+
 #if defined(ESP8266)
 #define RESET_WIFI_PIN D3
 #define PFC_INTERRUPT_PIN D5

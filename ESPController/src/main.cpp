@@ -83,7 +83,7 @@ NTPSyncEvent_t ntpEvent;            // Last triggered event
 AsyncWebServer server(80);
 
 //PCF8574P has an i2c address of 0x38 instead of the normal 0x20
-PCF857x pcf8574(0x38, &Wire);
+PCF857x pcf8574(PFC_ADDRESS, &Wire);
 
 void ICACHE_RAM_ATTR PCFInterrupt()
 {
